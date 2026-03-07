@@ -18,6 +18,11 @@
 [![Claude AI](https://img.shields.io/badge/Claude-AI-D4A843?style=for-the-badge&logo=anthropic&logoColor=black)](https://anthropic.com)
 [![License](https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge)](LICENSE)
 [![Node](https://img.shields.io/badge/Node-%E2%89%A518-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org)
+[![Live on Vercel](https://img.shields.io/badge/▲%20Live%20Demo-photoeditor--blue.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://photoeditor-blue.vercel.app/)
+
+<br/>
+
+### 🌐 &nbsp; [→ Open the Live App — photoeditor-blue.vercel.app](https://photoeditor-blue.vercel.app/)
 
 <br/>
 
@@ -101,6 +106,103 @@ Your original is never touched.
 </td>
 </tr>
 </table>
+
+---
+
+## 🌐 &nbsp; Using the Live App
+
+> **No installs. No setup. Just open the link and start editing.**
+>
+> 🔗 **[photoeditor-blue.vercel.app](https://photoeditor-blue.vercel.app/)**
+
+---
+
+### Step 1 — Load Your Photo
+
+Two ways to get an image into the editor:
+
+- **Drag & Drop** — drag any image file from your computer directly onto the canvas area
+- **Click to Browse** — click the upload zone to open a file picker
+
+Supported formats: JPG, PNG, WebP, GIF, BMP, TIFF, AVIF, SVG
+
+---
+
+### Step 2 — Adjust with Sliders
+
+The right panel has 8 real-time adjustment sliders. Every change previews instantly — nothing is permanent until you export.
+
+| Slider | What it controls |
+|--------|-----------------|
+| ☀ **Brightness** | Overall exposure — right to lift, left to darken |
+| ◑ **Contrast** | Difference between lights and darks |
+| ⬡ **Saturation** | Color intensity — drag left for black & white |
+| ⊕ **Hue Shift** | Rotates all colors around the color wheel |
+| ✦ **Warmth** | Pushes tones warm (golden) or cool (blue) |
+| ◎ **Blur** | Softens the image |
+| ▣ **Grayscale** | Desaturates toward film-noir black & white |
+| ◌ **Opacity** | Overall transparency of the image layer |
+
+---
+
+### Step 3 — Apply a Filter *(optional)*
+
+Click the **Filters** tab. You'll see 10 presets — each shows a live thumbnail of *your own photo* before you commit.
+
+```
+  Vivid   →  boosted saturation and punch
+  Cool    →  shifts tones into the blue range
+  Warm    →  golden-hour glow
+  Noir    →  high-contrast black & white
+  Fade    →  muted, washed-out film look
+  Chrome  →  high-key with lifted blacks
+  Velvet  →  soft pinks and magentas
+  Golden  →  rich amber tones
+  Matte   →  flat contrast, faded blacks
+  Ice     →  crisp, cold, desaturated
+```
+
+Click any filter to apply it. Click again to remove it.
+
+---
+
+### Step 4 — Transform *(optional)*
+
+Click the **Transform** tab to:
+
+- **Rotate** — 90° buttons or a free angle slider (−180° to +180°)
+- **Flip Horizontal** — mirror left-to-right
+- **Flip Vertical** — flip upside down
+
+---
+
+### Step 5 — AI Enhancement *(optional)*
+
+Click the **AI** tab and hit **Analyse Photo**. Claude reads your image and returns:
+
+- A scene description and mood label
+- Issues detected (flat exposure, colour cast, low contrast…)
+- Precise recommended values for every slider
+- Three pro tips from a virtual colorist
+- An **Apply All Suggestions** button that sets every slider in one click
+
+> ⚠️ Requires an Anthropic API key. See the **Enabling AI Enhancement** section below for setup.
+
+---
+
+### Step 6 — Undo / Redo / Reset
+
+| Action | Shortcut |
+|--------|----------|
+| Undo | `Ctrl+Z` / `⌘Z` |
+| Redo | `Ctrl+Shift+Z` |
+| Reset to original | **Reset** button in the top bar |
+
+---
+
+### Step 7 — Export
+
+Click **Export** in the top bar or press `Ctrl+S`. The editor renders your full-resolution image with every effect baked in and downloads it as a PNG. Your original file is never modified.
 
 ---
 
@@ -289,7 +391,11 @@ npm run lint      # 🔍 Check all source files for issues
 
 ## 🌐 &nbsp; Deploy Live (Free)
 
-### ▲ &nbsp; Vercel &nbsp;*(recommended — 60 seconds)*
+### ▲ &nbsp; Vercel &nbsp;*(this project is already live here)*
+
+🔗 **[photoeditor-blue.vercel.app](https://photoeditor-blue.vercel.app/)**
+
+To deploy your own fork:
 
 ```bash
 npm i -g vercel
